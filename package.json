@@ -1,6 +1,6 @@
 {
   "name": "rev-assets",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "lib/rev-assets.js",
   "description": "Revs static assets and updates HTML with the new names",
   "homepage": "https://github.com/callumlocke/node-rev-assets",
