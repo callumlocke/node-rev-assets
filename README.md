@@ -1,4 +1,4 @@
-# rev-assets [![Build Status](https://secure.travis-ci.org/callumlocke/rev-assets.png?branch=master)](http://travis-ci.org/callumlocke/rev-assets)
+# rev-assets [![Build Status](https://secure.travis-ci.org/callumlocke/node-rev-assets.png?branch=master)](http://travis-ci.org/callumlocke/node-rev-assets)
 
 > Generic tool for revving static assets and updating corresponding HTML elements.
 
