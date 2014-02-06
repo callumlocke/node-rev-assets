@@ -1,6 +1,6 @@
 {
   "name": "rev-assets",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/rev-assets.js",
   "description": "Revs static assets and updates HTML with the new names",
   "homepage": "https://github.com/callumlocke/node-rev-assets",
@@ -24,15 +24,13 @@
   },
   "devDependencies": {
     "mocha": "~1.17.1",
-    "chai": "~1.9.0",
-    "wrench": "~1.5.6",
-    "rimraf": "~2.2.6"
+    "chai": "~1.9.0"
   },
   "dependencies": {
     "async": "~0.2.10",
     "lodash": "~2.4.1",
     "glob": "~3.2.8",
     "soup": "0.0.9",
-    "cheerio": "~0.13.1"
+    "vinyl": "~0.2.3"
   }
 }

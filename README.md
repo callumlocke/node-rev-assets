@@ -1,6 +1,6 @@
 # rev-assets [![Build Status](https://secure.travis-ci.org/callumlocke/rev-assets.png?branch=master)](http://travis-ci.org/callumlocke/rev-assets)
 
-> Renames static assets with a revision hash, and updates the respective HTML attributes.
+> Generic tool for revving static assets and updating corresponding HTML elements.
 
 ## Getting Started
 
@@ -9,16 +9,15 @@
 ```javascript
 var revAssets = require('rev-assets');
 
-revAssets('dist/**/*.html', function (err) {
+revAssets('dist/**/*.html', function (err, htmlFiles, assets) {
   if (err) throw err;
   
-  // Assets are now revved.
+  // htmlFiles is an array of Vinyl file objects (containing updated markup)
+  // assets is a hash of original file path => renamed file path
 });
 ```
 
-The revAssets function scans your HTML file(s) for static assets (scripts, stylesheets and images) that are referenced by relative paths. It then renames the actual asset files (to something like `foo.iu3h49ns.js`) and updates the relevant HTML attributes accordingly. Then it fires your callback.
-
-Your callback takes takes up to two arguments: an error (which will be `null` if everything worked), and a `results` object, which you can inspect if you want to see which assets were renamed and which HTML files were rewritten.
+The `revAssets` function doesn't actually write anything to disk, it just provides data you can use to rename your assets and rewrite your HTML.
 
 
 ## Contributing
